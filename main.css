@@ -1,0 +1,126 @@
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+    background-color: var(--Very-Light-Gray);
+    padding: 0rem 15rem;
+    text-align: center;
+    font-family: 'Poppins';
+    align-content: center;
+}
+
+center > p {
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+    width: 450px;
+    align-content: center;
+}
+
+#box-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#box-container > div {
+    margin-top: 80px;
+}
+
+#inner-box {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 380px;
+    /* border: 2px solid black; */
+}
+
+#inner-box div {
+    margin: auto;
+    width: 75%;
+}
+
+.boxes {
+    width: 35%;
+    height: 170px;
+    color: white;
+    box-shadow: 0px 4px 3px var(--Grayish-Blue);
+    border-top: 4px solid;
+    border-radius: 5px;
+    text-align: left;
+    padding: 0rem 1.5rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.boxes > h4 {
+    color: black;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.text {
+    color: var(--Grayish-Blue);
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.boxes img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 0.5rem;
+}
+
+.attribution { 
+    font-size: 16px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 767px) {
+    #box-container {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    body {
+        padding: 0rem 1rem;
+    }
+
+    .boxes {
+        width: 100%;
+        /* margin: auto; */
+    }
+
+    #inner-box {
+        width: 100%;
+    }
+
+    #inner-box div {
+        width: 100%;
+        margin: 0;
+    }
+
+    center > p {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .attribution {
+        font-size: 11px;
+    }
+
+    #box-container {
+        margin-top: 0px;
+    }
+}
